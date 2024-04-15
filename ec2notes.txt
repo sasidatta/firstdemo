@@ -16,10 +16,13 @@ chmod 400 santest.pem
 
 Connecting with SSH key
 
-ssh -i santest.pem [ubuntu@54.85.11.111](mailto:ubuntu@54.85.11.111)
+#ubuntu: 
+ssh -i santest.pem ubuntu@54.85.11.111
 
-Switch to root
+#Amazon Linux 
+ssh -i santest.pem ec2-user@54.85.11.111
 
+#Switch to root
 sudo su
 
 Show the file systems
