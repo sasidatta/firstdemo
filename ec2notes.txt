@@ -111,3 +111,14 @@ df -h
 
 #Read the sample data again
 cat /data/san.text
+
+---
+
+#Create a new user in ubuntu
+sudo adduser elon
+
+#Add to sudo group for priveliges 
+usermod -aG sudo elon
+
+
+
