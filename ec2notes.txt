@@ -42,7 +42,7 @@ fdisk -l  - list out parition
 lsblk - list out parititions
 
 Format the file system
-sudo mkfs -t ext4  xvdb
+sudo mkfs -t ext4 /dev/xvdb
 
 Verification of file system data
 file -s /dev/xvdb
