@@ -124,4 +124,39 @@ sudo adduser elon
 usermod -aG sudo elon
 
 
+---
+
+Ubuntu - O/S     
+
+    => default username: ubuntu
+    
+
+Amazonlinux - OS 
+   => default username: ec2-user
+
+set password for user
+#sudo passwd ubuntu
+
+File1
+sudo vi /etc/ssh/sshd_config   (or)
+sudo nano /etc/ssh/sshd_config
+
+Uncomment this line by removing #
+"PasswordAuthentication yes"
+
+File2: Recent UBuntu OS 
+sudo vi /etc/ssh/sshd_config.d/60-cloudimg-settings.conf  (or) 
+   
+sudo nano /etc/ssh/sshd_config.d/60-cloudimg-settings.conf
+
+PasswordAuthentication no => change to "PasswordAuthentication yes"
+
+
+Restart SSH service
+sudo systemctl status sshd
+
+
+
+
+
 
